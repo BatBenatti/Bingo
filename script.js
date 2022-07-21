@@ -9,8 +9,9 @@ botao.addEventListener("click", () => {
   setTimeout(() => {
     pickRandom();
   }, 1100);
+});
 
-  const resto = document.getElementById("Resto");
+/*const resto = document.getElementById("Resto");
 
   inicio++;
   if (inicio === 75) {
@@ -25,10 +26,10 @@ botao.addEventListener("click", () => {
   if (inicio > 0 && inicio < 75) {
     resto.innerText = `Já foram sorteadas ${inicio} bolas`;
   }
-});
+}); */
 
 function contar() {
-  const times = 8;
+  const times = 9;
 
   const interval = setInterval(() => {
     const randomTag = pickRandom1();
@@ -48,6 +49,7 @@ function contar() {
     setTimeout(() => {}, 80);
   }, times * 80);
 }
+
 function pickRandom1() {
   const tags = document.querySelectorAll(".bola");
   const sorteio = document.querySelector(".sorteio");

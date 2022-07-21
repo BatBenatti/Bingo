@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+.tudo {
+  display: flex;
+}
+.bolas {
+  display: grid;
+  grid-template-columns: repeat(15, 6fr);
+  gap: 6px;
+  margin-bottom: 0px;
+  position: relative;
+  bottom: 0;
+  left: center;
+}
+
+.bola {
+  width: 70px;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  background: radial-gradient(at top left, #fff 20%, rgb(175, 174, 174));
+  -ms-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  box-shadow: 5px 3px 3px rgb(104, 103, 103);
+  margin: 0px auto;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.a-bola {
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(at top left, rgb(172, 5, 5), rgb(223, 5, 34));
+  box-shadow: 4px 2px 2px rgb(230, 108, 108);
+  border-radius: 150px;
+  box-shadow: 5px 3px 3px rgb(104, 103, 103);
+  margin: 0px auto;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.bola.highlight {
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(at top left, rgb(146, 41, 216), rgb(69, 40, 146));
+  box-shadow: 4px 2px 2px rgb(230, 108, 108);
+  border-radius: 150px;
+  box-shadow: 5px 3px 3px rgb(104, 103, 103);
+  margin: 0px auto;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  font-family: sans-serif;
+}
+
+.sorteio {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  background: radial-gradient(at top left, #fff 20%, rgb(175, 174, 174));
+  -ms-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 50%;
+  box-shadow: 5px 3px 3px rgb(104, 103, 103);
+  margin: 0px auto;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  font-size: 100px;
+  font-weight: bold;
+  position: relative;
+  top: 0vh;
+}
+
+h1 {
+  color: white;
+  font-size: 80px;
+  position: absolute;
+  top: 0px;
+  left: 28%;
+}
+
+h2 {
+  color: rgb(57, 190, 53);
+  position: center;
+
+  font-size: 40px;
+  transition: 0.4s ease;
+}
+
+.botao {
+  position: relative;
+  justify-content: flex-end;
+  font-size: 6vh;
+  border-radius: 20%;
+  background-color: #4caf50;
+  padding: 16px 38px;
+  transition-duration: 0.4s;
+}
+
+.botao:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}

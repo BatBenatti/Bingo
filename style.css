@@ -3,21 +3,18 @@
 }
 
 .tudo {
-  display: flex;
+  display: inline-grid;
+  gap: 10px;
 }
 .bolas {
   display: grid;
-  grid-template-columns: repeat(15, 6fr);
+  grid-template-columns: repeat(15, 15fr);
   gap: 6px;
-  margin-bottom: 0px;
-  position: relative;
-  bottom: 0;
-  left: center;
 }
 
 .bola {
-  width: 70px;
-  height: 70px;
+  width: 7.8vh;
+  height: 7.8vh;
   background-color: rgb(255, 255, 255);
   background: radial-gradient(at top left, #fff 20%, rgb(175, 174, 174));
   -ms-border-radius: 150px;
@@ -35,8 +32,8 @@
 }
 
 .a-bola {
-  width: 70px;
-  height: 70px;
+  width: 7.8vh;
+  height: 7.8vh;
   background: radial-gradient(at top left, rgb(172, 5, 5), rgb(223, 5, 34));
   box-shadow: 4px 2px 2px rgb(230, 108, 108);
   border-radius: 150px;
@@ -50,8 +47,8 @@
 }
 
 .bola.highlight {
-  width: 70px;
-  height: 70px;
+  width: 7.8vh;
+  height: 7.8vh;
   background: radial-gradient(at top left, rgb(146, 41, 216), rgb(69, 40, 146));
   box-shadow: 4px 2px 2px rgb(230, 108, 108);
   border-radius: 150px;
@@ -75,8 +72,8 @@ body {
 }
 
 .sorteio {
-  width: 400px;
-  height: 400px;
+  width: 44.5vh;
+  height: 44.5vh;
   background-color: rgb(255, 255, 255);
   background: radial-gradient(at top left, #fff 20%, rgb(175, 174, 174));
   -ms-border-radius: 150px;
@@ -92,34 +89,29 @@ body {
   justify-content: center;
   font-size: 100px;
   font-weight: bold;
-  position: relative;
-  top: 0vh;
 }
 
 h1 {
   color: white;
   font-size: 80px;
-  position: absolute;
-  top: 0px;
-  left: 28%;
 }
 
 h2 {
   color: rgb(57, 190, 53);
-  position: center;
 
   font-size: 40px;
   transition: 0.4s ease;
 }
 
 .botao {
-  position: relative;
-  justify-content: flex-end;
   font-size: 6vh;
   border-radius: 20%;
   background-color: #4caf50;
   padding: 16px 38px;
   transition-duration: 0.4s;
+  width: 50vh;
+  position: relative;
+  left: 30%;
 }
 
 .botao:hover {

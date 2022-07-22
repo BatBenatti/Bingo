@@ -1,9 +1,24 @@
 * {
   box-sizing: border-box;
 }
+.imagem1 {
+  width: 30%;
+  max-width: 1080;
+  position: absolute;
 
+  left: 0;
+  top: 0;
+}
+.imagem2 {
+  width: 30%;
+  max-width: 1080;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate3d(0, 1, 0, 180deg);
+}
 .tudo {
-  display: grid;
+  display: inline-grid;
   gap: 10px;
 }
 .bolas {
@@ -13,8 +28,10 @@
 }
 
 .bola {
-  width: 7.8vh;
-  height: 7.8vh;
+  width: 7.4vh;
+  height: 7.4vh;
+  max-width: 100%;
+  max-height: 100%;
   background-color: rgb(255, 255, 255);
   background: radial-gradient(at top left, #fff 20%, rgb(175, 174, 174));
   -ms-border-radius: 150px;
@@ -23,22 +40,24 @@
   -o-border-radius: 150px;
   border-radius: 150px;
   box-shadow: 5px 3px 3px rgb(104, 103, 103);
-  margin: 0px auto;
+
   align-items: center;
-  align-content: center;
+
   display: flex;
   justify-content: center;
   font-size: 25px;
 }
 
 .a-bola {
-  width: 7.8vh;
-  height: 7.8vh;
+  width: 7.4vh;
+  height: 7.4vh;
+  max-width: 100%;
+  max-height: 100%;
   background: radial-gradient(at top left, rgb(172, 5, 5), rgb(223, 5, 34));
   box-shadow: 4px 2px 2px rgb(230, 108, 108);
   border-radius: 150px;
   box-shadow: 5px 3px 3px rgb(104, 103, 103);
-  margin: 0px auto;
+
   align-items: center;
   align-content: center;
   display: flex;
@@ -47,13 +66,15 @@
 }
 
 .bola.highlight {
-  width: 7.8vh;
-  height: 7.8vh;
-  background: radial-gradient(at top left, rgb(146, 41, 216), rgb(69, 40, 146));
+  width: 7.4vh;
+  height: 7.4vh;
+  max-width: 100%;
+  max-height: 100%;
+  background: radial-gradient(at top left, rgb(15, 155, 33), rgb(23, 158, 30));
   box-shadow: 4px 2px 2px rgb(230, 108, 108);
   border-radius: 150px;
   box-shadow: 5px 3px 3px rgb(104, 103, 103);
-  margin: 0px auto;
+
   align-items: center;
   align-content: center;
   display: flex;
@@ -67,13 +88,15 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #333;
+  background-color: rgb(167, 187, 54);
   font-family: sans-serif;
 }
 
 .sorteio {
-  width: 44.5vh;
-  height: 44.5vh;
+  width: 40vh;
+  height: 40vh;
+  max-width: 100%;
+  max-height: 100%;
   background-color: rgb(255, 255, 255);
   background: radial-gradient(at top left, #fff 20%, rgb(175, 174, 174));
   -ms-border-radius: 150px;
@@ -106,15 +129,16 @@ h2 {
 .botao {
   font-size: 6vh;
   border-radius: 20%;
-  background-color: #4caf50;
+  background-color: #328fce;
   padding: 16px 38px;
   transition-duration: 0.4s;
   width: 50vh;
   position: relative;
   left: 30%;
+  max-width: 100%;
 }
 
 .botao:hover {
-  background-color: #4caf50; /* Green */
+  background-color: #2b79ad; /* Green */
   color: white;
 }
